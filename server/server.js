@@ -16,8 +16,7 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:3001",
   "http://localhost:1989",
-  // "https://prendicafee.onrender.com",
-  "https://www.salesprendi.com",
+  "https://warehousing-app.onrender.com",
 ];
 
 const path = require("path");
@@ -60,14 +59,6 @@ connectToDb(async (err) => {
   if (err) {
     console.log("Failed to connect to db: " + err.message);
   } else {
-    // generate_user(
-    //   "Prendi",
-    //   "il Caffee",
-    //   "prendicrm@gmail.com",
-    //   "Admin@1234",
-    //   "+355698765433",
-    //   "admin"
-    // );
     app.listen(PORT, "0.0.0.0", () => {
       console.log(`Server running on port ${PORT}`);
     });
