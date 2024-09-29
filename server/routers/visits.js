@@ -108,6 +108,7 @@ app.post("/unsuccessful", async (req, res) => {
     await tokenManager.authorize(req, res, async () => {
       // const firstImage = req.files.find((file) => file.fieldname === "image1");
       // const secondImage = req.files.find((file) => file.fieldname === "image2");
+      const bodyInformation = JSON.parse(req.body.info);
       const actionResponse = await visitRepo.markVisitUnsuccessful(
         bodyInformation.visitId,
         bodyInformation.notes,
