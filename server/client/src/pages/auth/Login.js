@@ -92,6 +92,8 @@ export default function Login() {
                   Sign in to Guy's warehouse
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>Admin username: admin@gmail.com Admin password: Admin@1234</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>Agent username: agent@gmail.com Agent password: Agent@1234</Typography>
               </Box>
 
               {/* <Tooltip title={capitalCase(method)} placement="right">
